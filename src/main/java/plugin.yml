@@ -1,0 +1,6 @@
+name: MyAges
+version: 0.0.1
+author: ManatorDE
+api-version: 1.17
+main: de.manator.myages.Main
+prefix: MyAges
