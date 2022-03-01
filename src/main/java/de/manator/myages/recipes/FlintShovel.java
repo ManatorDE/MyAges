@@ -28,7 +28,7 @@ public class FlintShovel {
 		item.setItemMeta(meta);
 		
 		recipe = new ShapedRecipe(new NamespacedKey(main, "flint_shovel"), item);
-		recipe.shape(" F "," S"," S ");
+		recipe.shape(" F "," S "," S ");
 		recipe.setIngredient('F', Material.FLINT);
 		recipe.setIngredient('S', Material.STICK);
 	}

@@ -1,6 +1,7 @@
 name: MyAges
-version: 0.0.1
+version: 0.0.2
 author: ManatorDE
 api-version: 1.17
 main: de.manator.myages.Main
+website: https://dev.bukkit.org/projects/myages
 prefix: MyAges
