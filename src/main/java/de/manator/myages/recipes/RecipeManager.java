@@ -40,5 +40,6 @@ public class RecipeManager {
 		new WoodenPickaxe(main).register();
 		new WoodenShovel(main).register();
 		new CraftingTable(main).register();
+		new RawSteel(main).register();
 	}
 }

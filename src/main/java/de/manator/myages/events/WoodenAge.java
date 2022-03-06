@@ -18,6 +18,8 @@ public class WoodenAge implements Listener {
 			if(block.getType() == Material.STONE) {
 				e.setDropItems(false);
 				block.getWorld().dropItemNaturally(block.getLocation(), new ItemStack(Material.FLINT, ((int) Math.random() * 2 + 1)));
+			} else if(block.getType() == Material.COAL_ORE || block.getType() == Material.COPPER_ORE) {
+				e.setDropItems(false);
 			}
 		} else if(usedItem.getType() == Material.WOODEN_AXE) {
 			if(block.getType().toString().contains("LOG")) {

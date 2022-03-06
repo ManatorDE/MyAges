@@ -15,7 +15,7 @@ public class IronAge implements Listener {
 		Block block = e.getBlock();
 		
 		if(usedItem.getType() == Material.IRON_PICKAXE) {
-			if(block.getType() == Material.DIAMOND_ORE || block.getType() == Material.DEEPSLATE_DIAMOND_ORE) {
+			if(block.getType() == Material.DIAMOND_ORE || block.getType() == Material.DEEPSLATE_DIAMOND_ORE || block.getType() == Material.REDSTONE_ORE) {
 				if(!(usedItem.hasItemMeta() && usedItem.getItemMeta().getLore() != null && usedItem.getItemMeta().getLore().contains("Steel Pickaxe"))) {
 					e.setDropItems(false);
 				}
