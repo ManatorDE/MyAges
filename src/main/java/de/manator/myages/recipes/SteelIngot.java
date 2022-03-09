@@ -34,7 +34,7 @@ public class SteelIngot {
 		meta.setDisplayName("Steel Ingot");
 		item.setItemMeta(meta);
 		
-		recipe = new FurnaceRecipe(new NamespacedKey(main, "steel_ingot"), item, (RecipeChoice) source.getData(), 5, 200);
+		recipe = new FurnaceRecipe(new NamespacedKey(main, "steel_ingot"), item, new RecipeChoice.ExactChoice(source), 5, 200);
 	}
 	
 	public void register() {

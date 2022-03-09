@@ -5,6 +5,7 @@ import java.util.Arrays;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.RecipeChoice;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.inventory.meta.ItemMeta;
 
@@ -27,7 +28,7 @@ public class CraftingTable {
 		meta.setDisplayName("Wood Shard");
 		drops.setItemMeta(meta);
 		recipe.shape("II","II");
-		recipe.setIngredient('I', drops.getData());
+		recipe.setIngredient('I', new RecipeChoice.ExactChoice(drops));
 	}
 	
 	public void register() {

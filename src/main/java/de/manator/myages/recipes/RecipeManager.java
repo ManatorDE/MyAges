@@ -23,23 +23,31 @@ public class RecipeManager {
 		}
 		return false;
 	}
-	
+
 	public ArrayList<Recipe> getRecipes() {
 		return recipes;
 	}
-	
+
 	public void loadItems() {
-		new FlintPickaxe(main).register();
-		new FlintAxe(main).register();
-		new FlintShovel(main).register();
-		new SteelIngot(main).register();
-		new SteelAxe(main).register();
-		new SteelPickaxe(main).register();
-		new SteelShovel(main).register();
+		// WoodenAge
 		new WoodenAxe(main).register();
 		new WoodenPickaxe(main).register();
 		new WoodenShovel(main).register();
 		new CraftingTable(main).register();
+
+		// Flint Age
+		new FlintPickaxe(main).register();
+		new FlintAxe(main).register();
+		new FlintShovel(main).register();
+		new FlintSword(main).register();
+		new FlintHoe(main).register();
+
+		// Steel Age
 		new RawSteel(main).register();
+		new SteelIngot(main).register();
+		new SteelAxe(main).register();
+		new SteelPickaxe(main).register();
+		new SteelShovel(main).register();
+		new SteelSword(main).register();
 	}
 }

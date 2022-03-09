@@ -1,5 +1,5 @@
 name: MyAges
-version: 0.0.3
+version: 0.0.4
 author: ManatorDE
 api-version: 1.17
 main: de.manator.myages.Main
